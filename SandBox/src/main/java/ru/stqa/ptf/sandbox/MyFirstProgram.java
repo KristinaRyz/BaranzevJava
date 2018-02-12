@@ -5,17 +5,21 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 public class MyFirstProgram{
 
 public static void main (String[] args){
-    String a = "world";
-System.out.println("Hello " + a);
+hello("user ");
+    hello("kristina ");
+    hello("Arina ");
+    hello("cat");
 
-int l = 8;
-int s = l*l;
-    System.out.println("Square of a square with a side of a square " + l + " = " + (l * l));
-    System.out.println("Square of a square with a side of square " + l + " = " + s);
+    Square s = new Square(5);
+        System.out.println("Square of a square with a side " + s.l + " = " + s.area());
 
+    Rectangle r = new Rectangle(4,3);
+        System.out.println("Square of a rectangle with a sides " + r.a + "," + r.b + " = " + r.area());
+}
+
+public static void hello(String a){
+    System.out.println("Hello " + a + "!");
 }
 
 
-
-
-}
+    }
